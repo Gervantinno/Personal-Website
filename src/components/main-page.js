@@ -8,7 +8,7 @@ export default function () {
         Hi!
         <br />
         My name is Valera
-        <br />I love programming and cats
+        <br />I love programming and cats 🐱‍💻
       </h1>
       <span>Scroll to proceed</span>
     </Page>
