@@ -4,7 +4,7 @@ import { Button } from "./styled/button.styled";
 export default function (props) {
   return (
     <div className={"card " + (props.isSmallImg ? "small" : "big")}>
-      {window.innerWidth > 900 && <img src={props.imgSrc} />}
+      <img src={props.imgSrc} />
       <div className="card-content">
         <div className="card-content-wrapper">
           <h3>{props.title}</h3>

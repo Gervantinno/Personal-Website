@@ -18,9 +18,9 @@ export default function () {
     );
   });
   return (
-    <Page className="paw-div">
-      <h2>Other prjects are</h2>
-      <div className="project-wrapper">{cards}</div>
+    <Page className="other-projects paw-div">
+      <h2>My other projects</h2>
+      {cards}
     </Page>
   );
 }
