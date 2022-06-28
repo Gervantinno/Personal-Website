@@ -10,7 +10,7 @@ export default function () {
         <br />
         Which maybe is already in production by the time you read this
       </h2>
-      <span>*hover on it to see more details</span>
+      {window.innerWidth > 900 && <span>*hover on it to see more details</span>}
       <Card
         title="Totalsupport"
         description="This site is my first enterprice project, which is made with joomla.
