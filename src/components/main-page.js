@@ -5,7 +5,7 @@ export default function () {
   return (
     <Page className="main-page paw-div">
       <h1>
-        Hi
+        Hi!
         <br />
         My name is Valera
       </h1>
