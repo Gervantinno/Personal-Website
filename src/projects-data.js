@@ -14,7 +14,7 @@ export default [
     id: 2,
     title: "Tenzei",
     description:
-      "A small game made with react that uses conditional rendering ",
+      "A small game made with React that uses conditional rendering ",
     imgSrc:
       "https://res.cloudinary.com/dcei0q0px/image/upload/v1656344661/gervantinno.github.io_Tenzei_dist_index.html_kx4u7w.png",
     isSmallImg: true,
@@ -24,9 +24,9 @@ export default [
   {
     id: 3,
     title: "Meme Generator",
-    description: "Project without styles made with react using api calls",
+    description: "Project with minimal styling made with React using Api calls",
     imgSrc:
-      "https://res.cloudinary.com/dcei0q0px/image/upload/v1656344568/gervantinno.github.io_Meme-Generator_dist_index.html_1_m7reoy.png",
+      "https://res.cloudinary.com/dcei0q0px/image/upload/v1656428427/localhost_8080__1_ellcyk.png",
     isSmallImg: true,
     siteHref: "https://gervantinno.github.io/Meme-Generator/dist/index.html",
     codeHref: "https://github.com/Gervantinno/Meme-Generator",
