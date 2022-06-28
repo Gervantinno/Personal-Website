@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: "This site",
     description:
-      "While working on this site I used such instruments as react, sass, styled components, node js, webpack",
+      "While working on this site I used such instruments as React, Sass, Styled components, Node js, Webpack",
     imgSrc:
       "https://res.cloudinary.com/dcei0q0px/image/upload/v1656349782/localhost_8080__s2dkaw.png",
     isSmallImg: true,

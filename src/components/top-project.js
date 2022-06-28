@@ -9,7 +9,7 @@ export default function () {
         <h2>
           This is my lattest and biggest project
           <br />
-          Which maybe is already in production by the time you read this
+          which maybe is already in production by the time you read this
         </h2>
       )}
       {window.innerWidth > 1120 && (
@@ -18,7 +18,7 @@ export default function () {
       <Card
         title="Totalsupport"
         description="This site is my first enterprice project, which is made with joomla.
-        While working on it I improved al lot in making responsive design with minimum number of media queries"
+        While working on it I improved a lot in making responsive design with minimum number of media queries"
         imgSrc="https://res.cloudinary.com/dcei0q0px/image/upload/v1656344247/totalsupport_pe5a3u.png"
         isSmallImg={false}
         siteHref="http://ts.totalsupport.ru/"
