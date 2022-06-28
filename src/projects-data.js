@@ -8,7 +8,7 @@ export default [
       "https://res.cloudinary.com/dcei0q0px/image/upload/v1656349782/localhost_8080__s2dkaw.png",
     isSmallImg: true,
     siteHref: "/",
-    codeHref: "https://github.com/Portfolio/Tenzei",
+    codeHref: "https://github.com/Gervantinno/Personal-Website",
   },
   {
     id: 2,
