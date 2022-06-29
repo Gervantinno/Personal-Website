@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: "This site",
     description:
-      "While working on this site I used such instruments as React, Sass, Styled components, Node js, Webpack",
+      "While working on this site I used such instruments as React, Sass, Styled Components, Node js and Webpack.",
     imgSrc:
       "https://res.cloudinary.com/dcei0q0px/image/upload/v1656349782/localhost_8080__s2dkaw.png",
     isSmallImg: true,
@@ -14,7 +14,7 @@ export default [
     id: 2,
     title: "Tenzei",
     description:
-      "A small game made with React that uses conditional rendering ",
+      "A small game made with React that uses conditional rendering.",
     imgSrc:
       "https://res.cloudinary.com/dcei0q0px/image/upload/v1656344661/gervantinno.github.io_Tenzei_dist_index.html_kx4u7w.png",
     isSmallImg: true,
@@ -24,7 +24,8 @@ export default [
   {
     id: 3,
     title: "Meme Generator",
-    description: "Project with minimal styling made with React using Api calls",
+    description:
+      "Project with minimal styling made with React using Api calls.",
     imgSrc:
       "https://res.cloudinary.com/dcei0q0px/image/upload/v1656428427/localhost_8080__1_ellcyk.png",
     isSmallImg: true,
