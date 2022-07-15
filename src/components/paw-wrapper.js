@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Paw from "./paw";
 import CalculateAngle from "../twoPointsAngle.js";
-import { nanoid } from "nanoid";
 
 export default function () {
   const [paws, setPaws] = useState([]);

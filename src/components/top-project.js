@@ -1,11 +1,11 @@
 import React from "react";
-import { Page } from "./styled/page";
+import Page from "./page";
 import Card from "./card";
 import projectsData from "../projects-data";
 
 export default function () {
   return (
-    <Page className="top-project paw-div">
+    <Page className="top-project">
       {window.innerWidth > 1120 && (
         <h2>
           This is my lattest and biggest project

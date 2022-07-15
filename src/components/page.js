@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from "react";
 
 const Page = styled.div`
   min-width: 100%;
@@ -9,4 +10,6 @@ const Page = styled.div`
   align-items: center;
 `;
 
-export { Page };
+export default function (props) {
+  return <Page className="paw-div">{props.children}</Page>;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import projectsData from "../projects-data";
 import Card from "./card";
-import { Page } from "./styled/page";
+import Page from "./page";
 
 export default function () {
   const cards = projectsData.map((project, index) => {
@@ -20,7 +20,7 @@ export default function () {
       );
   });
   return (
-    <Page className="other-projects paw-div">
+    <Page className="other-projects">
       <h2>My other projects</h2>
       {cards}
     </Page>

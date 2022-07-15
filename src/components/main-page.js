@@ -1,9 +1,9 @@
 import React from "react";
-import { Page } from "./styled/page";
+import Page from "./page";
 
 export default function () {
   return (
-    <Page className="main-page paw-div">
+    <Page className="main-page">
       <h1>
         Hi!
         <br />

@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 const StyledPaw = styled.img`
