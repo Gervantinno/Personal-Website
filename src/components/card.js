@@ -9,11 +9,11 @@ export default function (props) {
         <div className="card-content-wrapper">
           <h3>{props.title}</h3>
           <p>{props.description}</p>
-          <Button href={props.siteHref} color="#CE6EE6">
+          <Button href={props.siteHref} color="#CE6EE6" target={"_blank"}>
             Go to website
           </Button>
           {props.codeHref && (
-            <Button href={props.codeHref} color="#99FF01">
+            <Button href={props.codeHref} color="#99FF01" target={"_blank"}>
               Check code
             </Button>
           )}

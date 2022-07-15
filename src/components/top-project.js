@@ -1,6 +1,7 @@
 import React from "react";
 import { Page } from "./styled/page";
 import Card from "./card";
+import projectsData from "../projects-data";
 
 export default function () {
   return (
@@ -16,14 +17,12 @@ export default function () {
         <span>*hover on it to see more details</span>
       )}
       <Card
-        title="Totalsupport"
-        description="This site is my first enterprice project, which is made with Joomla. 
-        While working on it I improved a lot in making responsive design with minimum number of media queries. 
-        On it are implemented forms and ReCAPTCHA"
-        imgSrc="https://res.cloudinary.com/dcei0q0px/image/upload/v1656344247/totalsupport_pe5a3u.png"
-        isSmallImg={false}
-        siteHref="http://ts.totalsupport.ru/"
-        codeHref={null}
+        title={projectsData[0].title}
+        description={projectsData[0].description}
+        imgSrc={projectsData[0].imgSrc}
+        isSmallImg={projectsData[0].isSmallImg}
+        siteHref={projectsData[0].siteHref}
+        codeHref={projectsData[0].codeHref}
       />
     </Page>
   );

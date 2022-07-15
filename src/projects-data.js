@@ -1,6 +1,17 @@
 export default [
   {
     id: 1,
+    title: "Totalsupport",
+    description:
+      "This site is my first enterprice project, which is made with Joomla. While working on it I improved a lot in making responsive design with minimum number of media queries. On it are implemented forms and ReCAPTCHA",
+    imgSrc:
+      "https://res.cloudinary.com/dcei0q0px/image/upload/v1656344247/totalsupport_pe5a3u.png",
+    isSmallImg: false,
+    siteHref: "http://ts.totalsupport.ru/",
+    codeHref: null,
+  },
+  {
+    id: 2,
     title: "This site",
     description:
       "While working on this site I used such instruments as React, Sass, Styled Components, Node js and Webpack.",
@@ -11,7 +22,7 @@ export default [
     codeHref: "https://github.com/Gervantinno/Personal-Website",
   },
   {
-    id: 2,
+    id: 3,
     title: "Tenzei",
     description:
       "A small game made with React that uses conditional rendering.",
@@ -22,7 +33,7 @@ export default [
     codeHref: "https://github.com/Gervantinno/Tenzei",
   },
   {
-    id: 3,
+    id: 4,
     title: "Meme Generator",
     description:
       "Project with minimal styling made with React using Api calls.",
