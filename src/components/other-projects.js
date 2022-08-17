@@ -1,19 +1,18 @@
-import React from "react";
+import React, { memo } from "react";
 import projectsData from "../projects-data";
 import Card from "./card";
 import Page from "./page";
 
-export default function () {
-  const cards = projectsData.map((project, index) => {
-    //first project is displayed earlier
-    if (index > 0)
+export default memo(function () {
+  const cards = projectsData.map((project) => {
+    if (project.isPetProject)
       return (
         <Card
           key={project.id}
           title={project.title}
           description={project.description}
           imgSrc={project.imgSrc}
-          isSmallImg={project.isSmallImg}
+          isSmall={true}
           siteHref={project.siteHref}
           codeHref={project.codeHref}
         />
@@ -25,4 +24,4 @@ export default function () {
       {cards}
     </Page>
   );
-}
+});

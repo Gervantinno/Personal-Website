@@ -60,10 +60,10 @@ export default function () {
   }, []);
 
   return (
-    <>
+    <div>
       {paws.map((paw, index) => (
         <Paw key={index} left={paw.left} top={paw.top} degries={paw.degries} />
       ))}
-    </>
+    </div>
   );
 }

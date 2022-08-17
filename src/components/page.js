@@ -11,5 +11,5 @@ const Page = styled.div`
 `;
 
 export default function (props) {
-  return <Page className="paw-div">{props.children}</Page>;
+  return <Page className={`paw-div ${props.className}`}>{props.children}</Page>;
 }

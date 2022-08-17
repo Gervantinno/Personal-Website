@@ -3,12 +3,22 @@ import { Button } from "./styled/button.styled";
 
 export default function (props) {
   return (
-    <div className={"card " + (props.isSmallImg ? "small" : "big")}>
+    <div className={"card " + (props.isSmall ? "small" : "big")}>
       <img src={props.imgSrc} />
       <div className="card-content">
         <div className="card-content-wrapper">
-          <h3>{props.title}</h3>
-          <p>{props.description}</p>
+          {props.isSmall && <h3>{props.title}</h3>}
+          {props.isSmall && <p>{props.description}</p>}
+          {!props.isSmall && (
+            <>
+              <p>List of used technologies</p>
+              <ul className="technologies-list">
+                {props.technologies?.map((tech, index) => (
+                  <li key={index}>{tech}</li>
+                ))}
+              </ul>
+            </>
+          )}
           <Button href={props.siteHref} color="#CE6EE6" target={"_blank"}>
             Go to website
           </Button>

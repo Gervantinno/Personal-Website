@@ -1,17 +1,17 @@
-import React from "react";
+import React, { memo } from "react";
 import Page from "./page";
 
-export default function () {
+export default memo(function () {
   return (
     <Page className="about-me">
       <h2>
-        I am a third year <span>(actually already fourth)</span> college student
+        I am a fourth year programming college student
         <br />
-        with some experience in
+        with experience in
         <br />
         <br />
         <i>ENTERPRICE DEVELOPMENT</i>
       </h2>
     </Page>
   );
-}
+});
