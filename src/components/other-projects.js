@@ -20,7 +20,7 @@ export default memo(function () {
   });
   return (
     <Page className="other-projects">
-      <h2>My other projects</h2>
+      <h2>My pet projects</h2>
       {cards}
     </Page>
   );

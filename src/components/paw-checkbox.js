@@ -17,11 +17,6 @@ export default function () {
         onChange={(e) => {
           if (isPrintingOn) dispatcher(turnPawPrintingOff);
           else dispatcher(turnPawPrintingOn);
-          console.log(
-            document.querySelector(
-              "body #root .main-page .paw-checkbox-container .paw-checkbox::after"
-            )
-          );
         }}
         className="paw-checkbox"
         type="checkbox"
