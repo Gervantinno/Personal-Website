@@ -6,6 +6,9 @@ const StyledPaw = styled.img`
   width: 100px;
   height: 100px;
   animation: implode 700ms ease-in-out;
+  left: ${({ left }) => left}px;
+  top: ${({ top }) => top}px;
+  transform: rotate(${({ deg }) => deg}deg);
   @keyframes implode {
     0% {
       opacity: 1;
@@ -37,11 +40,9 @@ export default function Paw(props) {
       onAnimationEnd={function () {
         thisElement.current.remove();
       }}
-      style={{
-        left: props.left,
-        top: props.top,
-        transform: "rotate(" + props.degries + "deg)",
-      }}
+      left={props.left}
+      top={props.top}
+      deg={props.degries}
       src="https://res.cloudinary.com/dcei0q0px/image/upload/v1656344246/paw_lfbucp.png"
     />
   );

@@ -1,0 +1,125 @@
+.card {
+  position: relative;
+  display: flex;
+
+  &.big {
+    width: 100%;
+    max-width: 700px;
+    font-size: 18px;
+    justify-content: center;
+
+    & > img {
+      width: min(70vw, 700px);
+      height: 100%;
+      align-self: center;
+    }
+
+    & .content {
+      inset: 0 0 0 60%;
+    }
+  }
+
+  &.small {
+    width: clamp(200px, calc(30vh + 15vw), 400px);
+    max-width: 400px;
+
+    & .content {
+      inset: 0;
+    }
+  }
+
+  > * {
+    max-width: 100%;
+  }
+
+  .content {
+    position: absolute;
+    padding: 1em;
+    background-color: #393939;
+
+    .wrapper {
+      height: 100%;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 1.6em;
+        text-align: center;
+      }
+
+      > *:nth-child(2) {
+        &:is(p) {
+          text-align: center;
+        }
+        margin-block: auto;
+      }
+
+      .button-wrapper {
+        margin-top: auto;
+        display: flex;
+        gap: 8px;
+      }
+
+      .technologies-list {
+        list-style-position: inside;
+      }
+    }
+  }
+
+  //animation when it is pc
+  @media screen and (min-width: 70rem) {
+    .content {
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 500ms ease-out 50ms;
+      padding: clamp(1em, 8%, 4em) clamp(1em, 0.5em + 5%, 2em);
+
+      .wrapper {
+        opacity: 0;
+        transition: opacity 100ms ease-out;
+      }
+    }
+    &:focus-within .content,
+    &:hover .content {
+      transform: scaleX(1);
+      transition: transform 500ms ease-out;
+      .wrapper {
+        opacity: 1;
+        transition: opacity 100ms ease-out 350ms;
+      }
+    }
+  }
+
+  @media screen and (max-width: 70rem) {
+    &.small {
+      flex-direction: column;
+      gap: 1em;
+      .content {
+        position: initial;
+        height: fit-content;
+        background-color: inherit;
+      }
+    }
+  }
+
+  @media screen and (max-width: 45rem) {
+    &.big {
+      flex-direction: column;
+    }
+
+    &.big > img {
+      display: none;
+    }
+
+    &.big .content {
+      position: static;
+      background-color: inherit;
+    }
+    .button-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

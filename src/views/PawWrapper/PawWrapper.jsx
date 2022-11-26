@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Paw from "./paw";
-import CalculateAngle from "../twoPointsAngle.js";
+import Paw from "../../components/Paw/Paw";
+import CalculateAngle from "../../utils/twoPointsAngle.js";
 
 export default function () {
   const [paws, setPaws] = useState([]);
@@ -37,12 +37,7 @@ export default function () {
           earlyPos.x != latePos.x &&
           earlyPos.y != latePos.y
         ) {
-          let degries = CalculateAngle(
-            earlyPos.x,
-            earlyPos.y,
-            latePos.x,
-            latePos.y
-          );
+          let degries = CalculateAngle(earlyPos.x, earlyPos.y, latePos.x, latePos.y);
 
           setPaws((prevPaws) => {
             return [

@@ -1,7 +1,7 @@
 import React, { memo } from "react";
-import projectsData from "../projects-data";
-import Card from "./card";
-import Page from "./page";
+import projectsData from "../../data/projects";
+import Card from "../../components/Card/Card";
+import Page from "../../layouts/Page";
 
 export default memo(function () {
   const cards = projectsData.map((project) => {

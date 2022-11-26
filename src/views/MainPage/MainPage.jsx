@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import Page from "./page";
-import PawCheckbox from "./paw-checkbox";
+import Page from "../../layouts/Page";
+import PawCheckbox from "../../components/PawCheckbox/PawCheckbox";
 
 export default memo(function () {
   return (

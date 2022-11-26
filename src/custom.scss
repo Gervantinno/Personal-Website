@@ -153,9 +153,7 @@ body {
             &:checked {
               background-color: var(--white-clr);
               &::before {
-                left: calc(
-                  var(--parent-height) * 2 - var(--child-size) - var(--padding)
-                );
+                left: calc(var(--parent-height) * 2 - var(--child-size) - var(--padding));
               }
 
               &::after {
@@ -192,12 +190,17 @@ body {
           margin-bottom: 0.25em;
           font-size: 1.25rem;
         }
+
+        & > span {
+          margin-bottom: 1.225em;
+        }
       }
 
       .other-projects {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, max-content);
+        gap: 1em;
         align-content: center;
         justify-items: center;
 
@@ -214,132 +217,12 @@ body {
           }
         }
       }
-
-      .card {
-        position: relative;
-        display: flex;
-
-        &.big {
-          width: 100%;
-          max-width: 700px;
-          font-size: 18px;
-          justify-content: center;
-
-          & > img {
-            width: min(70vw, 700px);
-            height: 100%;
-            align-self: center;
-          }
-
-          & .card-content {
-            inset: 0 0 0 60%;
-          }
-        }
-
-        &.small {
-          width: clamp(200px, calc(30vh + 15vw), 400px);
-          max-width: 400px;
-
-          & .card-content {
-            inset: 0;
-          }
-        }
-
-        > * {
-          max-width: 100%;
-        }
-
-        .card-content {
-          position: absolute;
-          padding: 1em;
-          background-color: #393939;
-
-          .card-content-wrapper {
-            height: 100%;
-            display: flex;
-            gap: 10px;
-            flex-direction: column;
-            align-items: center;
-
-            h3 {
-              font-size: 1.6em;
-              text-align: center;
-            }
-
-            > *:nth-child(2) {
-              &:is(p) {
-                text-align: center;
-              }
-              margin-block: auto;
-            }
-
-            a:nth-of-type(1) {
-              margin-top: auto;
-            }
-
-            .technologies-list {
-              list-style-position: inside;
-            }
-          }
-        }
-
-        //animation when it is pc
-        @media screen and (min-width: 70rem) {
-          & {
-            aspect-ratio: 4 / 3;
-          }
-
-          .card-content {
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 500ms ease-out 50ms;
-            padding: clamp(1em, 8%, 4em) clamp(1em, 0.5em + 5%, 2em);
-
-            .card-content-wrapper {
-              opacity: 0;
-              transition: opacity 100ms ease-out;
-            }
-          }
-          &:focus-within .card-content,
-          &:hover .card-content {
-            transform: scaleX(1);
-            transition: transform 500ms ease-out;
-            .card-content-wrapper {
-              opacity: 1;
-              transition: opacity 100ms ease-out 350ms;
-            }
-          }
-        }
-
-        @media screen and (max-width: 70rem) {
-          &.small {
-            flex-direction: column;
-            gap: 1em;
-            .card-content {
-              position: initial;
-              height: fit-content;
-              background-color: inherit;
-            }
-          }
-        }
-
-        @media screen and (max-width: 45rem) {
-          &.big {
-            flex-direction: column;
-          }
-
-          &.big > img {
-            display: none;
-          }
-
-          &.big .card-content {
-            position: static;
-            background-color: inherit;
-          }
-        }
-      }
     }
   }
+}
+
+a {
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

@@ -1,9 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  turnPawPrintingOn,
-  turnPawPrintingOff,
-} from "../reducers/pawPrintReducer";
+import { turnPawPrintingOn, turnPawPrintingOff } from "../../reducers/pawPrintReducer";
 
 export default function () {
   const dispatcher = useDispatch();

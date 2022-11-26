@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import Page from "./page";
-import Card from "./card";
+import Page from "../../layouts/Page";
+import Card from "../Card/Card";
 
 export default memo(function (props) {
   return (
@@ -8,9 +8,7 @@ export default memo(function (props) {
       <h2>{props.projectData.title}</h2>
       <p>{props.projectData.description}</p>
 
-      {window.innerWidth > 1120 && (
-        <span>*hover on it to see more details</span>
-      )}
+      {window.innerWidth > 1120 && <span>*hover on it to see more details</span>}
       <Card
         imgSrc={props.projectData.imgSrc}
         isSmall={false}
